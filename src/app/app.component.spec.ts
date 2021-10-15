@@ -14,18 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'edu-template'`, () => {
+  it(`should have as title 'Edu Template'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('edu-template');
+    expect(app.title).toEqual('Edu Template');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'edu-template app is running!'
+    expect(compiled.querySelector('.teaser h2')?.textContent).toContain(
+      fixture.componentInstance.title
     );
   });
 });
