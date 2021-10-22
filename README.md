@@ -28,6 +28,7 @@ Das Projekt wurde ursprünglich generiert mit der [Angular CLI](https://github.c
 - EditorConfig
 - ESLint
 - Prettier
+- Tailwind CSS Intellisense
 
 ## VS Code Settings
 
