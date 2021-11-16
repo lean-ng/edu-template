@@ -1,72 +1,18 @@
-<style>
-  :host {
-    color: #313135;
-  }
-
-  h1,
-  h2 {
-    font-weight: 500;
-    margin: 0;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  img {
-    height: 100%;
-  }
-
-  header {
-    background-color: #f4f4fe;
-    height: 60px;
-    display: flex;
-    padding: 0 2rem;
-    border-bottom: 1px solid #ddd;
-    box-shadow: -2px 2px 8px #ccc;
-  }
-
-  header .brand {
-    display: flex;
-    align-items: center;
-  }
-  header .brand img {
-    height: 42px;
-    margin-right: 1rem;
-  }
-
-  main {
-    max-width: 960px;
-    margin: 2rem auto;
-    padding: 0 2rem;
-  }
-  .teaser {
-    border: 1px solid #ddd;
-    padding: 2rem 1rem;
-    border-radius: 6px;
-    box-shadow: 2px 2px 8px #ccc;
-  }
-  .teaser h2 {
-    padding: 0 1rem 0.5rem;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 1rem;
-  }
-  .teaser .content {
-    padding: 0 1rem;
-  }
-</style>
-
-<header>
-  <div class="brand">
+<header class="navbar navbar-expand navbar-light bg-light">
+  <div class="container-fluid">
+  <div class="navbar-brand d-flex align-items-center">
     <img src="/assets/logo.png" alt="Logo">
-    <h1>Lean Stack</h1>
+    <h1 class="h2 ms-2 mb-0">Lean Stack</h1>
   </div>
+</div>
 </header>
-<main>
-  <div class="teaser">
-    <h2>{{ title }}</h2>
-    <div class="content">
-      <p>Template-Repository für meine Schulungsbeispiele</p>
+<main class="container mt-5">
+  <div class="card w-75 mx-auto">
+    <div class="card-header">
+      {{ title }}
+    </div>
+    <div class="card-body">
+      <p class="card-text">Template-Repository für meine Schulungsbeispiele</p>
     </div>
   </div>
 </main>
